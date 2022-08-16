@@ -1,0 +1,14 @@
+.navbar{
+    height: 10vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Righteous', cursive;
+    background-color: black;
+    color: white;
+}
+
+.logo{
+    font-size: 24px;
+}

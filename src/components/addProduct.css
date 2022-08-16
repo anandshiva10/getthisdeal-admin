@@ -1,0 +1,105 @@
+.btn41-43 {
+    padding: 5px 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  
+  .btn-41 {
+    border: 1px solid rgb(0, 0, 0);
+    z-index: 0;
+    color: black;
+    width: 120px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 10px auto;
+  }
+  
+  .btn-41:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    background: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-41:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  .btn-41:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+  
+  .btn-41:active {
+    top: 2px;
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .project__modal-close{
+    position: absolute;
+    top: 1em;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search-lable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input[type=text] {
+    width: 230px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 20px;
+    outline: none;
+    padding: 4px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+select {
+
+    /* styling */
+    background-color: white;
+    border: thin solid #aaa;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 0.5em;
+    padding: 4px;
+    margin: 0 20px;
+  
+  }
+  
