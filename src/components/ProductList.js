@@ -3,7 +3,7 @@ import { firestore } from '../api/firebase'
 import {collection,doc, getDocs,deleteDoc} from "firebase/firestore"
 import { toast } from 'react-toastify'
 import "./productList.css"
-import { ClimbingBoxLoader } from 'react-spinners'
+import { ClimbingBoxLoader, ScaleLoader } from 'react-spinners'
 
 const Table = ({setLoader,loader,setLoading}) => {
     const [data,setData] = useState({})
@@ -50,7 +50,7 @@ const Table = ({setLoader,loader,setLoading}) => {
   return (
     <div className='productList'>
           {
-                dataFound?
+                dataFound? data.length>=1?
         <table className='styled-table'>
             <thead>
                 <tr>
@@ -66,7 +66,6 @@ const Table = ({setLoader,loader,setLoading}) => {
           
             <tbody>
                 {
-                
                 Object.keys(data).map((id)=>{
                     return(
                         <tr key={id}>
@@ -84,7 +83,8 @@ const Table = ({setLoader,loader,setLoading}) => {
             </tbody>
             
         </table>
-        :<div className='loader'><ClimbingBoxLoader
+        :
+        <div className='noData'>No Data Found</div>:<div className='loader'><ScaleLoader
         size={20}
         speedMultiplier={2}
       /></div>}

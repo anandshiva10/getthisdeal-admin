@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import ProductList from './ProductList'
-import AddProduct from './AddProduct'
 import Footer from './Footer';
 import AddProduct2 from './AddProduct2';
 
