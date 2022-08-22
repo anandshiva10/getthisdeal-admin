@@ -19,6 +19,7 @@ const AddProduct2 = ({setLoader,loader}) => {
         product_url:"",
         comment:"",
         hot_deal:false,
+        cat:"other",
         created_timeStamp:new Date().getTime()
     }
     const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -188,9 +189,22 @@ const AddProduct2 = ({setLoader,loader}) => {
             <label>Discount percentage</label>
             <input type='text' value={values.discount_percentage} name="discount_percentage" onChange={handleInputChange}  />
             </div>
+            <div className='line'>
             <div>
             <label>Product Url</label>
             <input type='text' value={values.product_url} name="product_url" onChange={handleInputChange}  />
+            </div>
+            <div>
+            <label>Category</label>
+            <select value={values.cat} name="cat" onChange={handleInputChange}>
+            <option value="fashion">Fashion</option>
+            <option value="electronics">Electronics</option>
+            <option value="homeapps">Home Appliances</option>
+            <option value="books">Books</option>
+            <option value="sports">Sports</option>
+            <option value="other">Other</option>
+          </select>
+            </div>
             </div>
             <div>
             <label>Comments</label>
