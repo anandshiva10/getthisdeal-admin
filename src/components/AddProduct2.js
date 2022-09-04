@@ -199,9 +199,13 @@ const AddProduct2 = ({setLoader,loader}) => {
             <select value={values.cat} name="cat" onChange={handleInputChange}>
             <option value="fashion">Fashion</option>
             <option value="electronics">Electronics</option>
-            <option value="homeapps">Home Appliances</option>
+            <option value="home">Home Appliances</option>
             <option value="books">Books</option>
             <option value="sports">Sports</option>
+            <option value="mobiles">Mobiles</option>
+            <option value="kitchen">Kitchen</option>
+            <option value="kids">Kids</option>
+            <option value="grocery">Grocery</option>
             <option value="other">Other</option>
           </select>
             </div>
